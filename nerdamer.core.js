@@ -578,6 +578,15 @@ var nerdamer = (function() {
                     }
                 }
                 return a;
+            },
+            step: function(x) {
+                if (x > 0) {
+                    return 1;
+                }
+                else if (x < 0) {
+                    return 0;
+                }
+                return 0.5;
             }
         };
         reserveNames(Math2); //reserve the names in Math2
@@ -1429,6 +1438,7 @@ var nerdamer = (function() {
                 'fact'      : [ , 1],
                 'round'     : [ , 1],
                 'mod'       : [ , 2],
+                'step'      : [ , 1],
                 'vector'    : [vector, -1],
                 'matrix'    : [matrix, -1],
                 'parens'    : [parens, -1],
